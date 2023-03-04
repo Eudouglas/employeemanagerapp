@@ -1,0 +1,386 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+body{
+  background-color: #f1f1f1;
+}
+s
+a {
+  cursor: pointer;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.social-links li a {
+  -webkit-border-radius: 50%;
+  background-color: rgba(89, 206, 181, .85);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  font-size: 12px;
+}
+
+a {
+  color: #707070;
+}
+i {
+color: white;
+}
+
+a {
+color: white;
+}
+.iconCube {
+  display: flex;
+  width: 3.5%;
+  height: 3.5%;
+  margin-right: 0.5%;
+  margin-left: -1%;
+}
+ .imagem{
+  position: relative;
+  display: flex;
+ }
+
+ .buttonAddNewEmployee {
+  --bg: #8d8b8b;
+  --text-color: #ffffff;
+  position: relative;
+  margin-left: 10%;
+  top: -4px;
+  width: 150px;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 2px;
+  opacity: 0.8;
+  letter-spacing: 0px;
+  box-shadow: #5a5a5a 0px 7px 2px, #000 0px 8px 5px;
+ }
+
+ .buttonAddNewEmployee:hover {
+  opacity: 1;
+}
+
+.buttonAddNewEmployee:active {
+  top: 4px;
+  box-shadow: #000000 0px 3px 2px,#000 0px 3px 5px;
+}
+.buttonAddNewEmployee2 {
+  --bg: #ff0000;
+  --text-color: #ffffff;
+  position: relative;
+  margin-left: 10%;
+  top: -4px;
+  width: 150px;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 2px;
+  opacity: 0.8;
+  letter-spacing: 0px;
+  box-shadow: #850000 0px 7px 2px, #000 0px 8px 5px;
+ }
+ 
+ .buttonAddNewEmployee2:hover {
+  opacity: 1;
+}
+
+.buttonAddNewEmployee2:active {
+  top: 4px;
+  box-shadow: #000000 0px 3px 2px,#000 0px 3px 5px;
+}
+.imagem{ 
+  position: absolute;
+  top: 150px;
+  width: 400px;
+  right: 200px;
+}
+
+.imagem2{ 
+  position: absolute;
+  width: 700px;
+  top: 50px;
+  right: 70px;
+  }
+
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+
+.cartao {
+  position: absolute;
+  left: 70px;
+  width: 600px;
+  height: 454px;
+  background: lightgrey;
+  box-shadow: #000000 0px 3px 2px,#000 0px 3px 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+.circles,
+.browser {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.circles {
+  width: 20%;
+  gap: 8px;
+  padding: 10px;
+}
+
+.c {
+  width: 09px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+}
+
+.c:first-child {
+  background-color: red;
+}
+
+.c:nth-child(2) {
+  background-color: rgb(204, 167, 4);
+}
+
+.c:last-child {
+  background-color: green;
+}
+
+.browser {
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  gap: 4px;
+}
+
+.chevrons {
+  display: flex;
+}
+
+.search-bar {
+  position: relative;
+  margin: 10px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: rgb(88, 88, 88);
+  box-shadow: inset 2px 2px 2px #05050525;
+}
+
+.search-bar svg {
+  position: absolute;
+  left: 5px;
+}
+.TextCartaoNotFound {
+  position: relative;
+  padding: 5px;
+  display:block;
+  top: 20px;
+  right: 150px;
+  font-size: 15px;
+}
+.ImageIconAdd{
+  position: relative;
+  top: 250px;
+  left: 200px;
+  width: 120%;
+}
+
+@media screen and (max-width:820px){
+  .iconCube {
+    position: relative;
+    left: 250px;
+  }
+  .buttonAddNewEmployee {
+    margin-top: 5px;
+    left: 229px;
+  }
+  .cartao {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 400px;
+    height: 300px;
+  }
+  .imagem {
+    top: 100px;
+    right: 70px;
+    width: 300px;
+  }
+  .imagem2 {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 400px;
+  }
+  .TextCartaoNotFound  {
+    top: 50px;
+    right: 130px;
+    font-size: 10px;
+  }
+  .ImageIconAdd{
+    position: relative;
+    top: 150px;
+    left: 140px;
+    width: 120%;
+  }
+
+}
+@media screen and (max-width:600px){
+  .iconCube {
+    position: relative;
+    left: 135px;
+    width: 5%;
+  }
+  .buttonAddNewEmployee {
+    margin-top: 5px;
+    left: 143px;
+  }
+  .cartao {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 350px;
+    height: 300px;
+  }
+  .search-bar {
+    width: 80%;
+    height: 100%;
+  }
+  .imagem {
+    top: 150px;
+    right: 50px;
+    width: 150px;
+  }
+  .imagem2 {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 280px;
+  }
+  .TextCartaoNotFound  {
+    top: 50px;
+    right: 115px;
+    font-size: 10px;
+  }
+
+  .TextCartaoNotFound h5 {
+    font-size: 11px;
+  }
+  .ImageIconAdd{
+    position: relative;
+    top: 150px;
+    left: 150px;
+    width: 130%;
+  }
+}
+
+@media screen and (max-width:375px){
+
+.iconCube {
+  position: relative;
+  left: 5px;
+  width: 10%;
+}
+.input {
+  width: 80px;
+}
+.buttonAddNewEmployee {
+  left: 50px;
+}
+.cartao {
+  position: absolute;
+  left: 10px;
+  width: 350px;
+  height: 230px;
+}
+.search-bar {
+  width: 80%;
+  height: 100%;
+}
+.imagem {
+display: none;
+}
+.imagem2 {
+display: none;
+}
+.TextCartaoNotFound  {
+  top: 10px;
+  right: 125px;
+  font-size: 10px;
+}
+.ImageIconAdd{
+  position: relative;
+  top: 150px;
+  left: 150px;
+  width: 130%;
+}
+}
